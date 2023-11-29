@@ -1,0 +1,20 @@
+
+<form method="POST">
+{%csrf_token%}
+{{todo_form}}
+
+  <button name="save">submit</button>
+
+
+</form>
+
+
+
+
+{%for i in todo%}
+
+<li>{{i.task}}</li>
+
+
+
+{%endfor%}

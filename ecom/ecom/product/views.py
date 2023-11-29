@@ -14,5 +14,8 @@ def contact(request):
     product=Product.objects.all()
     return render(request,'',{'product':product})
 
+def index(request):
+    return render(request,'index.html')
+
 
 
